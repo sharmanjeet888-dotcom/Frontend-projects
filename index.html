@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left border ">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <img class="invert" src="icons/logo.svg" alt="Logo">
+                </div>
+                <ul>
+                    <li><img class="invert" src="icons/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="icons/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img src="icons/library.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songsList">
+                    <ul>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer ">
+                    <ul class="flex">
+                        <li><a href="https://www.spotify.com/in-en/legal/">Legal</a></li>
+                        <li><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a>
+                        </li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></li>
+                        <li><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="right bg-grey rounded ">
+            <div class="header rounded ">
+                <div class="nav">
+                    <img class="invert" src="icons/arrow-left-01-stroke-rounded.svg" alt="">
+                    <img class="invert" src="icons/arrow-right-01-stroke-rounded.svg" alt="">
+
+                </div>
+                <div class="buttons">
+                    <button class="signupBtn">Sign Up</button>
+                    <button class="loginBtn">Login</button>
+                </div>
+            </div>
+
+
+            <div class="spotifyPlaylists">
+                <h2>Spotify Playlist</h2>
+
+                <div class="cardContainer ">
+                    <div class="card">
+                        <div class="play">
+                            <img src="icons/play-stroke-rounded (1).svg" alt="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02292341cd3e621d7f9171331f" alt="">
+                        <h2>happy Hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+
+                  
+                </div>
+            </div>
+
+            <div class="playbar">
+                <div class="songButton">
+                    <img src="icons/previous-stroke-rounded.svg" alt="">
+                    <img  src="icons/play-stroke-rounded (1).svg" alt="">
+                    <img src="icons/next-stroke-rounded.svg" alt="">
+                </div>
+                <div class="seekbar">
+                    <input type="range" id="seekbar" value="0" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
