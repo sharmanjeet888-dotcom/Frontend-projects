@@ -77,17 +77,21 @@
 
             <div class="playbar">
                 <div class="songButton">
-                    <img   src="icons/previous-stroke-rounded.svg" alt="">
-                    <img class="changeIcon" src="icons/play-stroke-rounded (1).svg" alt="">
-                    <img src="icons/next-stroke-rounded.svg" alt="">
+                    <img  class="prevSong feelbutton" src="icons/previous-stroke-rounded.svg" alt="">
+                    <img class="changeIcon feelbutton" src="icons/play-stroke-rounded (1).svg" alt="">
+                    <img class="nextSong feelbutton" src="icons/next-stroke-rounded.svg" alt="">
+                    <img class="cross feelbutton" src="icons/multiplication-sign-stroke-rounded.svg" alt="">
                 </div>
+                
                 <div class="seekbar">
-                    <input type="range" id="seekbar" value="0" >
-                </div>
-
-                <div class="songTime">
                     
+                    <span class="leftTime" style="color: black;">0.00</span>
+                    <input type="range" id="seekbar" min="0" max="100" value="0" >
+                    <span class="rightTime" style="color: black;">0.00</span>
+
+                    <div class="tooltipTime">0.00</div>
                 </div>
+                
             </div>
         </div>
     </div>

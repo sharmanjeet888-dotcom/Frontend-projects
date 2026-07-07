@@ -200,7 +200,7 @@ body {
     bottom: 0;
     height: 80px;
     width: 100%;
-    background-color: #fff;
+    background-color: #d4cfcf;
     display: none;
     flex-direction: column;
     font-display: column;
@@ -209,7 +209,28 @@ body {
     align-items: center;
 }
 
+.cross {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
 
+.feelbutton {
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    padding: 3px 3px;
+}
+
+.feelbutton:hover {
+    transform: scale(1.10);
+    opacity: 0.8;
+    background-color: rgb(190, 190, 190);
+    border-radius: 10px
+}
+
+.feelbutton:active {
+    transform: scale(0.9);
+}
 
 .songButton {
     gap: 12px;
@@ -217,12 +238,47 @@ body {
 }
 
 .seekbar {
-    width: 80%;
+    width: 90%;
     display: flex;
+    align-items:center;
+    gap: 12px;
 }
+
+.tooltipTime {
+    position: absolute;
+    transform: translateX(240%);
+    display: none;
+    background-color: #000000;
+    border: 1px solid white;
+    position: absolute;
+    left: 0;
+    bottom: 33px;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 4px;
+    cursor: ww;
+}
+
 
 #seekbar {
     width: 100%;
+    flex: 1;
+    -webkit-appearance: none;
+    border-radius: 15px;
+}
+
+#seekbar::-webkit-slider-runnable-track {
+    height: 5px;
+
+}
+
+#seekbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: rgb(0, 132, 255);
+    border-radius: 10px;
+    margin-top: -5px;
 }
 .songsList {
     overflow-y: scroll;
@@ -277,3 +333,8 @@ body {
     opacity: 0;
 }
 
+
+.songTime .leftTime{
+    position: absolute;
+    left: 20px;
+}
