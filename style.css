@@ -201,7 +201,7 @@ body {
     height: 80px;
     width: 100%;
     background-color: #fff;
-    display: flex;
+    display: none;
     flex-direction: column;
     font-display: column;
     justify-content: center;
